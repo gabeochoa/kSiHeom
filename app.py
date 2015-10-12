@@ -8,7 +8,7 @@ app.debug = True
 
 @app.route('/')
 def index():
-	return ""    
+	return "Hello Miggie"
 
 
 if __name__ == '__main__':
