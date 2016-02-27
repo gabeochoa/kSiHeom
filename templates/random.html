@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8" />
+        {% include 'header.html' %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/splash.css') }}" />
+        <title> Learn K-Idol Names</title>
+        <script type"text/javascript" src="https://assets.gfycat.com/gfycat.js"></script>
+     </head>
+
+	<body>
+        <a  style="font-family:Courier; color:White; font-size: 30px;" href="{{purl}}"> {{purl}} </a>
+        <img src="{{ purl }}" />
+        {{pcode|safe}}
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+</html>
