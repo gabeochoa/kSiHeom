@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		{% include 'header.html' %}
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/splash.css') }}" />
+		<title> Find Tacos Near You </title>
+	 </head>
+	
+	<body>
+		<p>Hello Ta.co</p>
+
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+			  
+	  	<iframe
+		  width="600"
+		  height="450"
+		  frameborder="0" style="border:0"
+		  src="https://www.google.com/maps/embed/v1/place?key={{APIKEY}}
+		    &q={{PLACE}}" allowfullscreen>
+		</iframe>
+	  
+		
+	  
+	</body>
+</html>
